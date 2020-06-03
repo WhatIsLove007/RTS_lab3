@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/geneticAlgo"
+        android:layout_width="326dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="69dp"
+        android:layout_marginEnd="43dp"
+        android:text="@string/text1"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/equation"
+        android:layout_width="291dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="60dp"
+        android:text="@string/text2"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/geneticAlgo" />
+
+    <TextView
+        android:id="@+id/askForInput"
+        android:layout_width="378dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="41dp"
+        android:layout_marginEnd="15dp"
+        android:text="@string/ask"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/equation" />
+
+    <TextView
+        android:id="@+id/c_"
+        android:layout_width="60dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="51dp"
+        android:layout_marginTop="32dp"
+        android:text="c  = "
+        android:textColor="#050505"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/c"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/a_" />
+
+    <EditText
+        android:id="@+id/d"
+        android:layout_width="66dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="54dp"
+        android:background="#E8E2E2"
+        android:ems="10"
+        android:inputType="numberSigned"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/b" />
+
+    <EditText
+        android:id="@+id/a"
+        android:layout_width="66dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="54dp"
+        android:background="#E8E2E2"
+        android:ems="10"
+        android:inputType="numberSigned"
+        app:layout_constraintEnd_toStartOf="@+id/b_"
+        app:layout_constraintStart_toEndOf="@+id/a_"
+        app:layout_constraintTop_toBottomOf="@+id/askForInput" />
+
+    <TextView
+        android:id="@+id/a_"
+        android:layout_width="60dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="51dp"
+        android:layout_marginTop="39dp"
+        android:text="a  = "
+        android:textColor="#050505"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/askForInput" />
+
+    <TextView
+        android:id="@+id/d_"
+        android:layout_width="60dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="34dp"
+        android:text="d  = "
+        android:textColor="#050505"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/d"
+        app:layout_constraintTop_toBottomOf="@+id/b_" />
+
+    <EditText
+        android:id="@+id/c"
+        android:layout_width="69dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="51dp"
+        android:background="#E8E2E2"
+        android:ems="10"
+        android:inputType="numberSigned"
+        app:layout_constraintEnd_toStartOf="@+id/d_"
+        app:layout_constraintTop_toBottomOf="@+id/a" />
+
+    <EditText
+        android:id="@+id/y"
+        android:layout_width="66dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="158dp"
+        android:background="#E8E2E2"
+        android:ems="10"
+        android:inputType="numberSigned"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/d_" />
+
+    <TextView
+        android:id="@+id/y_"
+        android:layout_width="60dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="127dp"
+        android:layout_marginTop="42dp"
+        android:text="y  = "
+        android:textColor="#050505"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/y"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/c" />
+
+    <EditText
+        android:id="@+id/b"
+        android:layout_width="69dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="51dp"
+        android:background="#E8E2E2"
+        android:ems="10"
+        android:inputType="numberSigned"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/askForInput" />
+
+    <TextView
+        android:id="@+id/b_"
+        android:layout_width="60dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="36dp"
+        android:text="b  = "
+        android:textColor="#050505"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/b"
+        app:layout_constraintTop_toBottomOf="@+id/askForInput" />
+
+    <Button
+        android:id="@+id/solve"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="165dp"
+        android:layout_marginTop="87dp"
+        android:layout_marginEnd="158dp"
+        android:layout_marginBottom="121dp"
+        android:background="#EC0505"
+        android:text="Solve"
+        android:textColorHint="#D71010"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/y" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

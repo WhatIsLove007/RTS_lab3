@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">GeneticAlgo</string>
+    <string name="text1">Genetic Algorithm</string>
+    <string name="text2">ax1 + bx2 + cx3 + dx4 = y</string>
+    <string name="ask">Please, input constant variables!</string>
+    <string name="result">The solution:\n x1 = %1$d\n x2 = %2$d\n x3 = %3$d\n x4 = %4$d\n with execution time of\n %5$f</string>
+</resources>
